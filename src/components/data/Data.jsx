@@ -232,7 +232,10 @@ function Data({ user, server }) {
                 Clear Filters
               </Button>{" "}
               {allData.length > 0 && (
-                <CSVLink data={allData} filename="bengal_heritage-data.csv">
+                <CSVLink
+                  data={allData.map(({ url, ...rest }) => rest)}
+                  filename="bengal_heritage-data.csv"
+                >
                   <Button variant="secondary">Download CSV</Button>
                   {/* <button>Download CSV</button> */}
                 </CSVLink>
