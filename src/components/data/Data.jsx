@@ -129,7 +129,7 @@ function Data({ user, server }) {
   };
 
   let headText;
-  if (server === "input_images") {
+  if (server === "output_server1") {
     headText = "1";
   } else if (server === "input_images2") {
     headText = "2";
